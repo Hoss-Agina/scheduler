@@ -11,3 +11,13 @@ export const getAppointmentsForDay = function(state, day) {
   })
   return appointmentArr
 }
+
+export const getInterview = function(state, interview) {
+  if (!interview) {
+    return null;
+  }
+  const interviewerStringNum = String(interview["interviewer"]);
+  const interviewInfo = state["interviewers"][interviewerStringNum];
+  const finalInterview = {...interview, interviewer: interviewInfo};
+  return finalInterview;
+}
