@@ -21,3 +21,17 @@ export const getInterview = function(state, interview) {
   const finalInterview = {...interview, interviewer: interviewInfo};
   return finalInterview;
 }
+
+export const getInterviewersForDay = function(state, day) {
+  let interviewersArr = [];
+  const arrOfDays = state["days"]
+  for (let elm of arrOfDays) {
+    if (elm["name"] === day) {
+      interviewersArr = elm["interviewers"];
+    }
+  }
+  interviewersArr =  interviewersArr.map(interviewer => {
+    return state["interviewers"][String(interviewer)];
+  })
+  return interviewersArr;
+}
