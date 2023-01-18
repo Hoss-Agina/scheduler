@@ -8,7 +8,7 @@ import Status from './Status.jsx';
 import Confirm from './Confirm.jsx';
 import Error_Save from './Error_Save.jsx';
 import Error_Delete from './Error_Delete.jsx';
-import useVisualMode from '../hooks/useVisualMode';
+import useVisualMode from 'hooks/useVisualMode';
 
 export default function Appointment(props) {
 
