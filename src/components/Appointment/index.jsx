@@ -6,8 +6,8 @@ import Empty from './Empty.jsx';
 import Form from './Form.jsx';
 import Status from './Status.jsx';
 import Confirm from './Confirm.jsx';
-import Error_Save from './Error_Save.jsx';
-import Error_Delete from './Error_Delete.jsx';
+import ErrorSave from './ErrorSave.jsx';
+import ErrorDelete from './ErrorDelete.jsx';
 import useVisualMode from 'hooks/useVisualMode';
 
 export default function Appointment(props) {
@@ -72,8 +72,8 @@ export default function Appointment(props) {
           onCancel={back}
         />
       )}
-      {mode === ERROR_SAVE && <Error_Save message="Could not create appointment" onClose={back}/>}
-      {mode === ERROR_DELETE && <Error_Delete message="Could not cancel appointment" onClose={back}/>}
+      {mode === ERROR_SAVE && <ErrorSave message="Could not create appointment" onClose={back}/>}
+      {mode === ERROR_DELETE && <ErrorDelete message="Could not cancel appointment" onClose={back}/>}
     </article>
   )
 }

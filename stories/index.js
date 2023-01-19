@@ -16,7 +16,7 @@ import Empty from 'components/Appointment/Empty.jsx';
 import Show from 'components/Appointment/Show.jsx';
 import Confirm from 'components/Appointment/Confirm.jsx';
 import Status from 'components/Appointment/Status.jsx';
-import Error from 'components/Appointment/Error_Save.jsx';
+import Error from 'components/Appointment/ErrorSave.jsx';
 import Form from 'components/Appointment/Form.jsx';
 
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from 'axios';
 
 export default function useApplicationData() {
@@ -25,7 +25,7 @@ export default function useApplicationData() {
     const listOfApptIds = currentDay.appointments;
     const listOfAppts = listOfApptIds.map(id => state.appointments[id]);
     const listOfFreeAppts = listOfAppts.filter(appt => !appt.interview);
-    const spots = listOfFreeAppts.length
+    const spots = listOfFreeAppts.length;
     return spots;
   }
 
