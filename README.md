@@ -22,6 +22,7 @@ npm test
 npm run storybook
 ```
 
+## Screenshot Images of Interview Scheduler App
 !["appointments_list"](https://github.com/Hoss-Agina/scheduler/blob/master/docs/appointments_list.png?raw=true)
 
 !["appointment_form](https://github.com/Hoss-Agina/scheduler/blob/master/docs/appointment_form.png?raw=true)
